@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=swap');
+
 .App {
   text-align: center;
 }
@@ -14,25 +16,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 2em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
