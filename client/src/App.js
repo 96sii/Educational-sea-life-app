@@ -1,16 +1,28 @@
-import logo from './assets/images/icon-monkey.svg';
+
 import './App.css';
 import AnimalAppContainer from "./containers/AnimalAppContainer";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import QuizContainer from './containers/QuizContainer';
+import ErrorPage from './components/ErrorPage';
 
-function App() {
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="Animal Education" />
-        <p>Animal Education App</p>
-      </header>
-
-      <AnimalAppContainer/>
+    <div>
+        <Router>
+      <>
+      <NavBar/>
+      <Routes>
+        <Route exact path="/" element={<Home />}/>
+        <Route path="/quiz" element={<QuizContainer />}/>
+        <Route path="/animals" element={<AnimalAppContainer />}/>
+        <Route element={ErrorPage}/>
+      </Routes>
+      </>
+    </Router>
     </div>
   );
 }

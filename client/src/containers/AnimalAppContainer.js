@@ -1,9 +1,13 @@
+import React from "react";
+
 import Animal from "../components/Animal";
 import AnimalList from '../components/AnimalList'
 import { useState, useEffect } from 'react';
 import animalsService from "../services/AnimalsServices";
 import QuizContainer from "./QuizContainer";
-import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
+
 
 
 
@@ -19,13 +23,11 @@ const AnimalAppContainer = () => {
 
   return (
     <>
-        <h1>AnimalAppContainer goes here</h1>
+        <h1>AnimalAppContainer - LIST OF ANIMALS GOES HERE</h1>
         <AnimalList animals = {animals}/>
-        <Router>
-          <Routes>
-            <Route path="/quiz" component={QuizContainer}/>
-          </Routes>
-        </Router>
+        {/* <li>
+            <Link to="/hello">Hello</Link>
+        </li> */}
     </>
   )
 }
