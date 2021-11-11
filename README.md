@@ -6,7 +6,7 @@ Using react, mongoDB and express. Performing unit and intergration testing where
 
 A user should be able to:
 
-* View some educational content on marine life, including useful information like diet, loocation and endagered status 
+* View some educational content on marine life, including useful information like diet, location and endagered status 
 * Be able to interact with the page to move through different sections of content
 * Quiz themselves on their new knowledge and have their final score be shown
 
