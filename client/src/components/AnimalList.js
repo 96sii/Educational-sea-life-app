@@ -11,7 +11,7 @@ const AnimalList = ({animals})=>{
                     location = {animal.location}
                     diet = {animal.diet}
                     species = {animal.species}
-                    endagered_level = {animal.endagered_level}
+                    endangered_level = {animal.endangered_level}
                     size = {animal.size}
                     lifespan = {animal.lifespan}
                     fun_facts = {animal.fun_facts}
