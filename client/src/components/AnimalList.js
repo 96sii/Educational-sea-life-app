@@ -9,6 +9,12 @@ const AnimalList = ({animals})=>{
                     <Animal
                     name = {animal.name}
                     location = {animal.location}
+                    diet = {animal.diet}
+                    species = {animal.species}
+                    endagered_level = {animal.endagered_level}
+                    size = {animal.size}
+                    lifespan = {animal.lifespan}
+                    fun_facts = {animal.fun_facts}
                     />
                 )
             })}
