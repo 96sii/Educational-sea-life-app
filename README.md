@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Educational App - Sea Animals
+The BBC are looking to improve their online offering of educational content on marine life by developing some interactive browser applications that display information in a fun and interesting way. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## MVP
+Using react, mongoDB and express. Performing unit and intergration testing where appropriate using React testing and Cypress. 
 
-## Available Scripts
+A user should be able to:
 
-In the project directory, you can run:
+* View some educational content on marine life, including useful information like diet, loocation and endagered status 
+* Be able to interact with the page to move through different sections of content
+* Quiz themselves on their new knowledge and have their final score be shown
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Possible Extensions
+* Implement a react library to create an interactive map
+* Allow a user to input a username
+* Show a user's previous high score
+* Style the app appropriately with CSS
+* Make the app responsive
+* Deployment using Firebase
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Getting Started
+These instructions should get you a copy of the project up and running on your local machine for development purposes.
 
-### `yarn test`
+Server
+Install server dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<code>cd server</code>
 
-### `yarn build`
+<code>npm install</code>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Seed the database:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<code>npm run seeds</code>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run express:
 
-### `yarn eject`
+<code>npm run server:dev</code>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Client
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<code>cd ../client</code>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<code>npm install</code>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<code>npm start</code>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
