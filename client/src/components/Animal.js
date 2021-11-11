@@ -1,8 +1,9 @@
-const Animal = () => {
+const Animal = ({animals, name, location}) => {
 
     return (
       <>
-          <p>Animal goes here</p>
+          <p>{name}</p>
+          <p>{location}</p>
       </>
     )
   }
