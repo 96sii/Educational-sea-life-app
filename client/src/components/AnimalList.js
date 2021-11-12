@@ -4,9 +4,10 @@ const AnimalList = ({animals})=>{
 
     return(
         <div className="animal-wrapper">
-            {animals.map(animal => {
+            {animals.map((animal, index) => {
                 return(
                     <Animal
+                    key = {index}
                     name = {animal.name}
                     location = {animal.location}
                     diet = {animal.diet}

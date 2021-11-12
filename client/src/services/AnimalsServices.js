@@ -1,6 +1,6 @@
 const baseURL = 'http://localhost:5000/api/animals/'
 
-const animalsService = {
+const animalsServices = {
 
     getAnimals() {
         return fetch(baseURL)
@@ -8,4 +8,4 @@ const animalsService = {
     }
 }
 
-export default animalsService;
+export default animalsServices;
