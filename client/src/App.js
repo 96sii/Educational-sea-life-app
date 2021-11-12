@@ -8,6 +8,7 @@ import Home from './components/Home';
 import QuizContainer from './containers/QuizContainer';
 import ErrorPage from './components/ErrorPage';
 import animalsServices from './services/AnimalsServices';
+import MapContainer from './containers/MapContainer';
 
 const App = () => {
 
@@ -136,6 +137,7 @@ const App = () => {
 		  handleQuizReset={handleQuizReset}
         />}/>
         <Route path="/animals" element = {<AnimalAppContainer animals = {animals}/>}/>
+		<Route path="/map" element = {<MapContainer />}/>
         <Route element={ErrorPage}/>
       </Routes>
       </>
