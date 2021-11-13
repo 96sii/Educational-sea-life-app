@@ -15,7 +15,7 @@ const turtleIcon = L.icon(new AnimalIcon(turtle));
 const Map = ()=>{
 
     const position = [51.505, -0.09]
-    const penguinPosition = [84, 45]
+    const penguinPosition = [-70, 45]
     const whalePositions = [[0, -120],[50, -30], [0, 70], [83, -10], [-50, -10]]
     const turtlePositions = [[0, 0], [-10, -30], [40, -60], [-20, 110]]
     
