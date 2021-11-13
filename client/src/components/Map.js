@@ -5,20 +5,19 @@ import 'leaflet/dist/leaflet.css';
 import './Map.css';
 import whale from '../assets/images/icon-whale.svg';
 import penguin from '../assets/images/icon-penguin.svg';
+import turtle from '../assets/images/icon-turtle.svg';
 
 
 const whaleIcon = L.icon(new AnimalIcon(whale));
 const penguinIcon = L.icon(new AnimalIcon(penguin));
+const turtleIcon = L.icon(new AnimalIcon(turtle));
 
-
-
-L.Marker.prototype.options.icon = whaleIcon;
-
-const Map = ({animalCoordinates})=>{
+const Map = ()=>{
 
     const position = [51.505, -0.09]
     const penguinPosition = [84, 45]
-    const whalePositions = [[0, -120],[50, -30], [0, 70]]
+    const whalePositions = [[0, -120],[50, -30], [0, 70], [83, -10], [-50, -10]]
+    const turtlePositions = [[0, 0], [-10, -30], [40, -60], [-20, 110]]
     
 
   
@@ -45,9 +44,16 @@ const Map = ({animalCoordinates})=>{
       Whales can be found in all of the major Oceans
     </Popup>
     </Marker>
-    )
+    )})}
 
-  })};
+    {turtlePositions.map((position, index) => {
+    return(
+    <Marker key = {index} position={position} icon={turtleIcon}>
+    <Popup>
+      Turtles can be found in coastal waters in every continent apart from Antarctica
+    </Popup>
+    </Marker>
+    )})};
   
   
 </MapContainer>
