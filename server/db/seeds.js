@@ -5,6 +5,7 @@ db.animals.insertMany([
     {
         name: "Penguin", 
         location: "Antarctica",
+        coordinates: "",
         diet: ["Krill", "Squid", "Fish"],
         species:"Flightless Seabird",
         endangered_level: "Some species are critically endangered",
