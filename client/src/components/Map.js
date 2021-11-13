@@ -14,10 +14,13 @@ const penguinIcon = L.icon(new AnimalIcon(penguin));
 
 L.Marker.prototype.options.icon = whaleIcon;
 
-const Map = ()=>{
+const Map = ({animalCoordinates})=>{
+
     const position = [51.505, -0.09]
-    const whalePosition = [51.505, -0.09]
-    const penguinPosition = [90, 45]
+    const penguinPosition = [84, 45]
+    const whalePositions = [[0, -120],[50, -30], [0, 70]]
+    
+
   
   return (
     <MapContainer center={position} zoom={"2"} style={{ height: '100vh', width: '100vw' }}
@@ -31,16 +34,26 @@ const Map = ()=>{
   />
   <Marker position={penguinPosition} icon={penguinIcon}>
     <Popup>
-      A pretty CSS3 popup. <br /> Easily customizable.
+      Penguins are found in Antarctica
     </Popup>
   </Marker>
-  <Marker position={whalePosition} icon={whaleIcon}>
+
+  {whalePositions.map((position, index) => {
+    return(
+    <Marker key = {index} position={position} icon={whaleIcon}>
     <Popup>
-      A pretty CSS3 popup. <br /> Easily customizable.
+      Whales can be found in all of the major Oceans
     </Popup>
-  </Marker>
+    </Marker>
+    )
+
+  })};
+  
+  
 </MapContainer>
   );
 }
+
+
 
 export default Map;

@@ -14,10 +14,10 @@ const App = () => {
 
 
 
-  const [animals, setAnimals] = useState([]);
+	const [animals, setAnimals] = useState([]);
 
   // quiz
-  const questions = [
+	const questions = [
 		{
 			questionText: 'Where do sharks live?',
 			answerOptions: [
@@ -92,7 +92,7 @@ const App = () => {
 		}
 	];
 
-  	const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
@@ -115,32 +115,32 @@ const App = () => {
 			setShowScore(false);
 		}
 
-  useEffect(()=>{
+	useEffect(()=>{
     animalsServices.getAnimals()
     .then(animals => setAnimals(animals))
-  }, []);
+	}, []);
 
-  return (
+	return (
     <>
     <div>
-      <Router>
-      <>
-      <NavBar/>
-      <Routes>
-        <Route exact path="/" element={<Home />}/>
-        <Route path="/quiz" element={<QuizContainer 
-          score={score}
-          questions={questions}
-          currentQuestion={currentQuestion}
-          handleAnswerOptionClick={handleAnswerOptionClick}
-          showScore={showScore}
-		  handleQuizReset={handleQuizReset}
-        />}/>
-        <Route path="/animals" element = {<AnimalAppContainer animals = {animals}/>}/>
-		<Route path="/map" element = {<MapContainer />}/>
-        <Route element={ErrorPage}/>
-      </Routes>
-      </>
+	<Router>
+		<>
+		<NavBar/>
+		<Routes>
+			<Route exact path="/" element={<Home />}/>
+			<Route path="/quiz" element={<QuizContainer 
+				score={score}
+				questions={questions}
+				currentQuestion={currentQuestion}
+				handleAnswerOptionClick={handleAnswerOptionClick}
+				showScore={showScore}
+				handleQuizReset={handleQuizReset}
+			/>}/>
+			<Route path="/animals" element = {<AnimalAppContainer animals = {animals}/>}/>
+			<Route path="/map" element = {<MapContainer animals = {animals}/>}/>
+			<Route element={ErrorPage}/>
+		</Routes>
+		</>
     </Router>
     </div>
 
@@ -148,7 +148,7 @@ const App = () => {
     </>
 
     
-  );
+);
 }
 
 export default App;

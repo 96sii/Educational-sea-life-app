@@ -1,10 +1,15 @@
 import Map from '../components/Map';
 
-const MapContainer = ()=> {
+const MapContainer = ({animals})=> {
+
+    const animalCoordinates = animals.map(animal => {
+        return animal.coordinates;
+
+    })
     return (
         <>
         <p>MAP</p>
-        <Map />
+        <Map animalCoordinates = {animalCoordinates}/>
         </>
     )
 }
