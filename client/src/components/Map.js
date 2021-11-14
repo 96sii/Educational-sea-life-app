@@ -94,7 +94,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={fishIcon}>
             <Popup>
-              Dolphins can be found in Temperate and Tropical waters
+              Clown Fish can be found in Temperate and Tropical waters
             </Popup>
           </Marker>
         )
@@ -113,7 +113,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={sealIcon}>
             <Popup>
-              Walrus live in Pacific Ocean, Atlantic and Arctic Ocean
+              Seals live on both shores of the North Atlantic Ocean
             </Popup>
           </Marker>
         )
