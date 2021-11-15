@@ -11,8 +11,11 @@ MongoClient.connect('mongodb://localhost:27017', { useUnifiedTopology: true })
   .then((client) => {
     const db = client.db('sea_life');
     const animalsCollection = db.collection('animals');
+    const questionsCollection = db.collection('questions');
     const animalsRouter = createRouter(animalsCollection);
+    const questionsRouter = createRouter(questionsCollection);
     app.use('/api/animals', animalsRouter);
+    app.use('/api/questions', questionsRouter);
   })
   .catch(console.err);
 
