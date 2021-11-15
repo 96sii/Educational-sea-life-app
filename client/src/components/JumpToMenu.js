@@ -17,7 +17,7 @@ const JumpToMenu = ()=>{
         <li><Link to="Dolphin" spy={true} smooth={true}>Dolphin</Link></li>
         <li><Link to="Clown Fish" spy={true} smooth={true}>Clown Fish</Link></li>
         <li><Link to="Seals" spy={true} smooth={true}>Seal</Link></li>
-        <li><Link path="/quiz" element={QuizContainer}> Quiz </Link></li>
+        <li><NavLink to="/quiz">Quiz</NavLink></li>
       </ul>
       </>
     )
