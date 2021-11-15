@@ -1,0 +1,110 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(../assets/images/bg-homepage-ocean-landscape.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    color: #FFF;
+}
+
+.home h1 {
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.nav-bar-container-home {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.nav-bar-container-home ul {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+
+.nav-bar-container-home li {
+    display: inline-flex;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    color: #888;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.nav-bar-container-home li:first-of-type {
+    display: none;
+}
+
+.nav-bar-container-home li a {
+    padding: .5em 1.5em 1.5em 1.5em;
+    width: 160px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.nav-bar-container-home li:hover, .nav-bar-container-home li:focus {
+    -webkit-transform: scale3d(1.025, 1.025, 1.025);
+    transform: scale3d(1.025, 1.025, 1.025);
+}
+
+.nav-bar-container-home ul li::before {
+    display: inline-block;
+    content: "";
+    width: 100px;
+    height: 100px;
+    margin: 2em 0;
+}
+
+.nav-bar-container-home ul li:nth-child(2)::before {
+    background: url(../assets/images/icon-whale.svg) no-repeat center center;
+}
+
+.nav-bar-container-home ul li:nth-child(3)::before {
+    background: url(../assets/images/icon-quiz.svg) no-repeat center center;
+}
+
+.nav-bar-container-home ul li:nth-child(4)::before {
+    background: url(../assets/images/icon-map.svg) no-repeat center center;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 920px) {
+    .nav-bar-container-home ul {
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .nav-bar-container-home li {
+        margin-bottom: 2em;
+    }
+
+    .nav-bar-container-home ul li::before {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav-bar-container-home li a {
+        padding: .5em 2em 1.5em 2em;
+        width: 180px;
+        font-size: 1.2em;
+    }
+}

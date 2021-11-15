@@ -1,16 +1,19 @@
-import logo from '../assets/images/icon-monkey.svg';
+import './Home.css';
+import NavBar from '../components/NavBar';
 
 const Home = () => {
 
     return (
       <>
-      <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="Animal Education" />
-        <p>Animal Education App</p>
-        <h1>HOME PAGE</h1>
-      </header>
-    </div>
+        <div className="home">
+          <div className="constraint">
+              <h1>Sea Animals</h1>
+              <h2>Education App</h2>
+              <div className="nav-bar-container-home">
+                <NavBar/>
+              </div>        
+          </div>
+        </div>
       </>
     )
   };

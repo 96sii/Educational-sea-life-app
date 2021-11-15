@@ -1,19 +1,44 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
+
+    //assigning location variable
+    const location = useLocation();
+    //destructuring pathname from location
+    const { pathname } = location;
+    //Javascript split method to get the name of the path in array
+    const splitLocation = pathname.split("/");
+
     return(
         <ul>
-            <li>
-                <Link to="/">Home</Link>
+            <li className={splitLocation[1] === "" ? "active" : ""}>
+                <NavLink to="/" style={({ isActive }) => {
+                    return {
+                        color: isActive ? "red" : ""
+                    };
+                }}>Home</NavLink>
             </li>
-            <li>
-                <Link to="/animals">Animals</Link>
+            <li className={splitLocation[1] === "animals" ? "active" : ""}>
+                <NavLink to="/animals" style={({ isActive }) => {
+                    return {
+                        color: isActive ? "red" : ""
+                    };
+                }}>Sea Animals</NavLink>
             </li>
-            <li>
-                <Link to="/quiz">Quiz</Link>
+            <li className={splitLocation[1] === "quiz" ? "active" : ""}>
+                <NavLink to="/quiz" style={({ isActive }) => {
+                    return {
+                        color: isActive ? "red" : ""
+                    };
+                }}>Quiz</NavLink>
             </li>
-            <li>
-                <Link to="/map">Map</Link>
+            <li className={splitLocation[1] === "map" ? "active" : ""}>
+                <NavLink to="/map" style={({ isActive }) => {
+                    return {
+                        color: isActive ? "red" : ""
+                    };
+                }}>Map</NavLink>
             </li>
         </ul>
     )

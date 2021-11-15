@@ -12,11 +12,9 @@ import MapContainer from './containers/MapContainer';
 
 const App = () => {
 
-
-
 	const [animals, setAnimals] = useState([]);
 
-  // quiz
+  	// quiz
 	const questions = [
 		{
 			questionText: 'Where do sharks live?',
@@ -97,57 +95,52 @@ const App = () => {
 	const [score, setScore] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
-			if (isCorrect) {
-				setScore(score + 1);
-			}
-
-			const nextQuestion = currentQuestion + 1;
-			if (nextQuestion < questions.length) {
-				setCurrentQuestion(nextQuestion);
-			} else {
-				setShowScore(true);
-			}
-		};
-
-		const handleQuizReset = () => {
-			setScore(0);
-			setCurrentQuestion(0);
-			setShowScore(false);
+		if (isCorrect) {
+			setScore(score + 1);
 		}
 
-	useEffect(()=>{
-    animalsServices.getAnimals()
-    .then(animals => setAnimals(animals))
+		const nextQuestion = currentQuestion + 1;
+		if (nextQuestion < questions.length) {
+			setCurrentQuestion(nextQuestion);
+		} else {
+			setShowScore(true);
+		}
+	};
+
+	const handleQuizReset = () => {
+		setScore(0);
+		setCurrentQuestion(0);
+		setShowScore(false);
+	}
+
+	useEffect(() => {
+    	animalsServices.getAnimals()
+    	.then(animals => setAnimals(animals))
 	}, []);
 
 	return (
     <>
-    <div>
-	<Router>
-		<>
-		<NavBar/>
-		<Routes>
-			<Route exact path="/" element={<Home />}/>
-			<Route path="/quiz" element={<QuizContainer 
-				score={score}
-				questions={questions}
-				currentQuestion={currentQuestion}
-				handleAnswerOptionClick={handleAnswerOptionClick}
-				showScore={showScore}
-				handleQuizReset={handleQuizReset}
-			/>}/>
-			<Route path="/animals" element = {<AnimalAppContainer animals = {animals}/>}/>
-			<Route path="/map" element = {<MapContainer animals = {animals}/>}/>
-			<Route element={ErrorPage}/>
-		</Routes>
-		</>
-    </Router>
-    </div>
-
-
+		<div className="App">
+			<Router>
+				<>
+				<Routes>
+					<Route exact path="/" element={<Home />}/>
+					<Route path="/quiz" element={<QuizContainer 
+						score={score}
+						questions={questions}
+						currentQuestion={currentQuestion}
+						handleAnswerOptionClick={handleAnswerOptionClick}
+						showScore={showScore}
+						handleQuizReset={handleQuizReset}
+					/>}/>
+					<Route path="/animals" element = {<AnimalAppContainer animals = {animals}/>}/>
+					<Route path="/map" element = {<MapContainer animals = {animals}/>}/>
+					<Route element={ErrorPage}/>
+				</Routes>
+				</>
+			</Router>
+		</div>
     </>
-
-    
 );
 }
 
