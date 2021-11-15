@@ -13,9 +13,9 @@ const AnimalAppContainer = ({animals}) => {
 
   return (
     <>
-    <JumpToMenu />
     <div className="constraint">
       <NavBar/>
+      <JumpToMenu />
       <h1>AnimalAppContainer - LIST OF ANIMALS GOES HERE</h1>
       <AnimalList animals = {animals}/>
       </div>

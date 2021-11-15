@@ -1,9 +1,11 @@
 import { Link } from 'react-scroll';
+import './JumpToMenu.css';
 
 
 const JumpToMenu = ()=>{
     return(
-        <ul>
+        <ul className="jump-to-menu">
+        <h3>Jump To:</h3>
         <li><Link activeClass="active" to="Penguin" spy={true} smooth={true}>Penguin</Link></li>
         <li><Link to="Whale" spy={true} smooth={true}>Whale</Link></li>
         <li><Link to="Turtle" spy={true} smooth={true}>Turtle</Link></li>
