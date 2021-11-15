@@ -10,7 +10,10 @@ db.animals.insertMany([
         endangered_level: "Some species are critically endangered",
         size: "1.1-1.3m",
         lifespan: "15-20 years",
-        fun_facts: "The male of the species looks after the eggs."
+        fun_facts: "The male of the species looks after the eggs.",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     },
     {
         name: "Whale", 
@@ -20,7 +23,10 @@ db.animals.insertMany([
         endangered_level: "Some species are critically endangered",
         size: "13 - 30m",
         lifespan: "35 - 90 years",
-        fun_facts: "Despite living in the water, whales breathe air."
+        fun_facts: "Despite living in the water, whales breathe air.",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     },
     {
         name: "Turtle", 
@@ -30,7 +36,10 @@ db.animals.insertMany([
         endangered_level: "Some species are critically endangered",
         size: "0.1 - 2.7m",
         lifespan: "25 -100 years",
-        fun_facts: "Turtles have favourite colours - they prefer yellow, orange and red food."
+        fun_facts: "Turtles have favourite colours - they prefer yellow, orange and red food.",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     },
     {
         name: "Walrus", 
@@ -40,7 +49,10 @@ db.animals.insertMany([
         endangered_level: "Some species are endangered",
         size: "2.6 - 3.7m",
         lifespan: "40 years",
-        fun_facts: "Orcas and polar bears are their only natural predators"
+        fun_facts: "Orcas and polar bears are their only natural predators",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     },
     {
         name: "Shark", 
@@ -50,7 +62,10 @@ db.animals.insertMany([
         endangered_level: "Almost Extinct",
         size: "1.2 - 10m",
         lifespan: "20 - 30 years",
-        fun_facts: "Sharks have fantastic vision"
+        fun_facts: "Sharks have fantastic vision",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     },
     {
         name: "Dolphin", 
@@ -60,7 +75,10 @@ db.animals.insertMany([
         endangered_level: "Some species are critically endangered",
         size: "2.2 - 2.7m",
         lifespan: "40 - 60 years",
-        fun_facts: "Dolphins have 2 stomachs"
+        fun_facts: "Dolphins have 2 stomachs",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     },
     {
         name: "Clown Fish", 
@@ -70,7 +88,10 @@ db.animals.insertMany([
         endangered_level: "Not endangered, however coral reefs where they make their home are disappearing.",
         size: "7cm",
         lifespan: "6 - 10 years",
-        fun_facts: "Clownfish have a symbiotic relationship with anemone.They depend on each other for survival. "
+        fun_facts: "Clownfish have a symbiotic relationship with anemone.They depend on each other for survival. ",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     },
     {
         name: "Seals", 
@@ -80,7 +101,10 @@ db.animals.insertMany([
         endangered_level: "Some species are endangered",
         size: "1.8 - 2.1m",
         lifespan: "25 - 35 years",
-        fun_facts: "Seals can swim up to 22mph"
+        fun_facts: "Seals can swim up to 22mph",
+        images: [
+            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+        ]
     }
 ]);
 

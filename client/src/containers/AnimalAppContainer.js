@@ -8,7 +8,7 @@ import JumpToMenu from "../components/JumpToMenu";
 import MyGallery from '../components/MyGallery';
 import '../components/AnimalAppContainer.css'
 
-const AnimalAppContainer = ({animals, items}) => {
+const AnimalAppContainer = ({animals}) => {
 
 
   return (
@@ -18,7 +18,7 @@ const AnimalAppContainer = ({animals, items}) => {
         <JumpToMenu />
         <h1>AnimalAppContainer - LIST OF ANIMALS GOES HERE</h1>
         <AnimalList animals = {animals}/>
-        <MyGallery items = {items} />
+        
       </div>
     </>
   )
