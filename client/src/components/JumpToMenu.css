@@ -17,3 +17,12 @@ li{
     cursor: pointer;
     padding: 1em;
 }
+
+li:hover{
+   font-size: 110%;
+}
+
+li:active{
+    border: 3px solid #e5640f;
+    border-radius: 1em; 
+}

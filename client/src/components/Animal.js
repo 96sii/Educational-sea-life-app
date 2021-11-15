@@ -1,8 +1,11 @@
+import './Animal.css'
+
 const Animal = ({animals, name, location, diet, species, endangered_level, size, lifespan, fun_facts}) => {
 
 
     return (
-      <>
+      <div className="animal-item">
+
           <h3 id= {name}>{name}</h3>
           <p>Location: {location}</p>
           <ul>
@@ -17,9 +20,7 @@ const Animal = ({animals, name, location, diet, species, endangered_level, size,
           <p>Size: {size}</p>
           <p>Lifespan: {lifespan}</p>
           <p>Fun Fact: {fun_facts}</p>
-          <hr></hr>
-          
-      </>
+          </div>  
     )
   }
   

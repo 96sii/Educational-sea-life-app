@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import NavBar from '../components/NavBar';
 import JumpToMenu from "../components/JumpToMenu";
 import MyGallery from '../components/MyGallery';
+import '../components/AnimalAppContainer.css'
 
 const AnimalAppContainer = ({animals, items}) => {
 
