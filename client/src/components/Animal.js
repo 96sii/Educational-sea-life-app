@@ -3,7 +3,7 @@ const Animal = ({animals, name, location, diet, species, endangered_level, size,
 
     return (
       <>
-          <h3>{name}</h3>
+          <h3 id= {name}>{name}</h3>
           <p>Location: {location}</p>
           <ul>
           {diet.map((food, index) => {
