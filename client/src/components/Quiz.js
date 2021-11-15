@@ -21,14 +21,14 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 									{question.answerOptions.map((answer) => {
 										if(answer.isCorrect === true){
 										return (
-											<div>
+											<div className='correct-answer'>
 												{answer.answerText} ✅
 											</div>
 										)} else if (answer.isCorrect === false && answers.includes(answer.answerText)) {
 											return (
-												<div>
-												You answered: {answer.answerText} ❌
-											</div>
+												<div className='incorrect-answer'>
+													You answered: {answer.answerText} ❌
+												</div>
 											)
 										}
 									})}
