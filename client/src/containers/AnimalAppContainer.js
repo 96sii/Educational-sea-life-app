@@ -5,19 +5,19 @@ import QuizContainer from "./QuizContainer";
 import { Link } from "react-router-dom";
 import NavBar from '../components/NavBar';
 import JumpToMenu from "../components/JumpToMenu";
- 
+import MyGallery from '../components/MyGallery';
 
-const AnimalAppContainer = ({animals}) => {
-
+const AnimalAppContainer = ({animals, items}) => {
 
 
   return (
     <>
-    <div className="constraint">
-      <NavBar/>
-      <JumpToMenu />
-      <h1>AnimalAppContainer - LIST OF ANIMALS GOES HERE</h1>
-      <AnimalList animals = {animals}/>
+      <div className="constraint">
+        <NavBar/>
+        <JumpToMenu />
+        <h1>AnimalAppContainer - LIST OF ANIMALS GOES HERE</h1>
+        <AnimalList animals = {animals}/>
+        <MyGallery items = {items} />
       </div>
     </>
   )

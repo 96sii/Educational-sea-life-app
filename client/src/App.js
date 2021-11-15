@@ -16,6 +16,22 @@ const App = () => {
 	const [questions, setQuestions] = useState(questions);
 	const [loaded, setLoaded] = useState(false);	
 		
+	const defaultImages = [
+		{
+		  original: './assets/images/gallery-images/ClownFish1.jpeg',
+		  thumbnail: './assets/images/gallery-images/ClownFish1.jpeg',
+		},
+		{
+		  original: 'https://picsum.photos/id/1015/1000/600/',
+		  thumbnail: 'https://picsum.photos/id/1015/250/150/',
+		},
+		{
+		  original: 'https://picsum.photos/id/1019/1000/600/',
+		  thumbnail: 'https://picsum.photos/id/1019/250/150/',
+		},
+	];
+
+	const [images, setImages] = useState(defaultImages);
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
@@ -68,7 +84,10 @@ const App = () => {
 						showScore={showScore}
 						handleQuizReset={handleQuizReset}
 					/>}/>
-					<Route path="/animals" element = {<AnimalAppContainer animals = {animals}/>}/>
+					<Route path="/animals" element = {<AnimalAppContainer 
+						items = {images}
+						animals = {animals}
+					/>}/>
 					<Route path="/map" element = {<MapContainer animals = {animals}/>}/>
 					<Route element={ErrorPage}/>
 				</Routes>
