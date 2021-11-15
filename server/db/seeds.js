@@ -83,3 +83,78 @@ db.animals.insertMany([
         fun_facts: "Seals can swim up to 22mph"
     }
 ]);
+
+db.questions.insertMany([
+    {
+        questionText: 'Where do sharks live?',
+        answerOptions: [
+            { answerText: 'Warm tropical waters', isCorrect: true },
+            { answerText: 'The arctic', isCorrect: false },
+            { answerText: 'Antarctica', isCorrect: false },
+            { answerText: 'Coral Reefs', isCorrect: false },
+        ],
+    },
+    {
+        questionText: 'What do seals like to eat?',
+        answerOptions: [
+            { answerText: 'Algae', isCorrect: false },
+            { answerText: 'Sand Eels and Cod', isCorrect: true },
+            { answerText: 'Clams', isCorrect: false },
+            { answerText: 'Worms', isCorrect: false },
+        ],
+    },
+    {
+        questionText: 'How long can a Clown Fish live?',
+        answerOptions: [
+            { answerText: '90 - 100 years', isCorrect: false },
+            { answerText: '40 - 60 years', isCorrect: false },
+            { answerText: '25 - 35 years', isCorrect: false },
+            { answerText: '6 - 10 years', isCorrect: true },
+        ],
+    },
+    {
+        questionText: 'What type of animal is a whale?',
+        answerOptions: [
+            { answerText: 'Fish', isCorrect: false },
+            { answerText: 'Mammal', isCorrect: true },
+            { answerText: 'Bird', isCorrect: false },
+            { answerText: 'Reptile', isCorrect: false },
+        ],
+    },
+    {
+        questionText: 'What are a walruses natural predators?',
+        answerOptions: [
+            { answerText: 'Sharks', isCorrect: false },
+            { answerText: 'Penguins', isCorrect: false },
+            { answerText: 'Seals', isCorrect: false },
+            { answerText: 'Orcas and Polar Bears', isCorrect: true},
+        ],
+    },
+    {
+        questionText: 'How big can an Emperor Penguin grow?',
+        answerOptions: [
+            { answerText: '1.1 - 1.3m', isCorrect: true },
+            { answerText: '13 - 30cm', isCorrect: false },
+            { answerText: '7cm', isCorrect: false },
+            { answerText: '2.6 - 3.7m', isCorrect: false},
+        ],
+    },
+    {
+        questionText: 'How fast can a seal swim?',
+        answerOptions: [
+            { answerText: '1 mph', isCorrect: false },
+            { answerText: '5 mph', isCorrect: false },
+            { answerText: '22 mph', isCorrect: true },
+            { answerText: '70 mph', isCorrect: false},
+        ],
+    },
+    {
+        questionText: 'What are a turtles favourite colours?',
+        answerOptions: [
+            { answerText: 'Purple', isCorrect: false },
+            { answerText: 'Red, yellow and orange', isCorrect: true },
+            { answerText: 'Blue', isCorrect: false },
+            { answerText: 'Green', isCorrect: false},
+        ],
+    }
+])

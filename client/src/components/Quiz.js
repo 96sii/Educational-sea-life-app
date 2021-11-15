@@ -1,4 +1,8 @@
-const Quiz = ({score, questions, currentQuestion, handleAnswerOptionClick, showScore, handleQuizReset}) => {
+const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClick, showScore, handleQuizReset}) => {
+
+	if(!loaded){
+		return <p>loading...</p>
+	}
 
     return (
         <>
@@ -17,10 +21,10 @@ const Quiz = ({score, questions, currentQuestion, handleAnswerOptionClick, showS
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-                            <>
+						{questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                            <li key={index}>
 							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-                            </>
+                            </li>
 						))}
                     </div>
 				</>
