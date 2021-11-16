@@ -1,1 +1,12 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
+
+.image-gallery {
+    padding: 2em;
+    background: #DDD;
+    margin-top: 1.5em;
+}
+
+.image-gallery-slides {
+    border: 15px solid #FFF;
+    border-radius: 1em;
+}

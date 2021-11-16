@@ -1,15 +1,15 @@
 .container-menu-jump-to {
-    position: sticky;
+    position: initial;
     border: 3px solid #e5640f;
     display: flex;
     flex-flow: column wrap;
-    -ms-flex-preferred-size: 17%;
-    flex-basis: 17%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
     align-self: flex-start;
     vertical-align: top;
     background-color: #f1f1f1;
     color: #231f20;
-    margin-bottom: 4px;
+    margin-bottom: 1em;
     padding: 1.5em 0 1.5em 1.5em;
     top: 24px;
     border-radius: 2em;
@@ -42,3 +42,12 @@
 .container-menu-jump-to h3 {
     font-weight: 300;
 }
+
+
+@media only screen and (min-width: 920px) {
+    .container-menu-jump-to {
+        position: sticky;
+        -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
+    }
+  }

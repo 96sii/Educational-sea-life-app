@@ -1,5 +1,4 @@
 import Animal from "./Animal";
-import MyGallery from "./MyGallery";
 
 const AnimalList = ({animals})=>{
 
@@ -19,8 +18,9 @@ const AnimalList = ({animals})=>{
                         size = {animal.size}
                         lifespan = {animal.lifespan}
                         fun_facts = {animal.fun_facts}
+                        images = {animal.images}
                         />
-                        <MyGallery items = {animal.images}/>
+                        
                     </>
                 )
             })}

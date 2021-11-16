@@ -3,16 +3,24 @@
   background-size: cover;
   min-height: 100vh;
   margin: 0;
-  font-size: 1.125em
+  font-size: 1.125em;
 }
 
 .content-container {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .animal-wrapper {
   -ms-flex-preferred-size: 78%;
   flex-basis: 78%;
+}
+
+@media only screen and (min-width: 920px) {
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+  }
 }
