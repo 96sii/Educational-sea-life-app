@@ -1,5 +1,3 @@
-import L from 'leaflet';
-
 class AnimalIcon {
     constructor(iconUrl) {
         this.iconUrl = iconUrl;
