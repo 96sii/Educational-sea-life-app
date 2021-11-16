@@ -1,3 +1,5 @@
+import '../components/Quiz.css'
+
 const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClick, answers, showScore, handleQuizReset}) => {
 
 	if(!loaded){
@@ -44,15 +46,13 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-							<span>Question {currentQuestion + 1}</span>/{questions.length}
+							<span className='question-text'>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                            <li key={index}>
-							<button id={'button' + (index + 1)} onClick={() => handleAnswerOptionClick(answerOption.isCorrect, answerOption.answerText)}>{answerOption.answerText}</button>
-                            </li>
+							<button className='quiz-button' key={index} id={'button' + (index + 1)} onClick={() => handleAnswerOptionClick(answerOption.isCorrect, answerOption.answerText)}>{answerOption.answerText}</button>
 						))}
                     </div>
 				</>
