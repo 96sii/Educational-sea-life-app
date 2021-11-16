@@ -10,8 +10,8 @@ const MapContainer = ({animals})=> {
     })
     return (
         <>
-        <NavBar/>
         <div className="map-page">
+        <NavBar className="map-nav-bar"/>
         <Map animalCoordinates = {animalCoordinates}/>
         </div>
         </>
