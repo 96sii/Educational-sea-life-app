@@ -1,8 +1,9 @@
-const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClick, showScore, handleQuizReset}) => {
+const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClick, answers, showScore, handleQuizReset}) => {
 
 	if(!loaded){
 		return <p>loading...</p>
 	}
+	console.log(answers)
 
     return (
         <>
@@ -10,6 +11,33 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
+					{questions.map((question) => {
+						return (
+							<>
+								<div className='question-text'>
+									{question.questionText}
+								</div>
+								<div>
+									{question.answerOptions.map((answer) => {
+										if(answer.isCorrect === true){
+										return (
+											<div className='correct-answer'>
+												{answer.answerText} ✅
+											</div>
+										)} else if (answer.isCorrect === false && answers.includes(answer.answerText)) {
+											return (
+												<div className='incorrect-answer'>
+													You answered: {answer.answerText} ❌
+												</div>
+											)
+										}
+									})}
+								</div>
+							</>
+								)
+						})}
+					
+
                     <button onClick={() => handleQuizReset()}>Reset</button>
 				</div>
 			) : (
@@ -23,7 +51,7 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption, index) => (
                             <li key={index}>
-							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect, answerOption.answerText)}>{answerOption.answerText}</button>
                             </li>
 						))}
                     </div>
@@ -33,5 +61,4 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
         </>
     );
 }
-
 export default Quiz;
