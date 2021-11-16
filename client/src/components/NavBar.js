@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
@@ -19,13 +19,14 @@ const NavBar = () => {
                     };
                 }}>Home</NavLink>
             </li>
+                <Link to='/animals'>
             <li className={splitLocation[1] === "animals" ? "active" : ""}>
                 <NavLink to="/animals" style={({ isActive }) => {
                     return {
                         color: isActive ? "red" : ""
                     };
                 }}>Sea Animals</NavLink>
-            </li>
+            </li></Link>
             <li className={splitLocation[1] === "quiz" ? "active" : ""}>
                 <NavLink to="/quiz" style={({ isActive }) => {
                     return {
