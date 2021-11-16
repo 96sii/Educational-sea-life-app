@@ -17,6 +17,12 @@
     text-decoration: none;
   }
 
-  #top-nav-bar-item a:active{
-      text-transform: underline;
+  #top-nav-bar-item a:hover {
+      color: #e5640f;
+  }
+
+  #top-nav-bar-item a.active{
+    color: #e5640f;
+    border-bottom: 5px solid #e5640f; 
+    margin-bottom: 2em;
   }
