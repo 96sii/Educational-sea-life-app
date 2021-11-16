@@ -7,4 +7,11 @@ describe('Animal', () => {
         expect(true).to.equal(true)
     })
 
+    it('should have click reset quiz button', () => {
+        for (let i= 1; i < 9; i++) {
+            cy.get('#button1').click()
+        }
+        cy.get('#reset-button').should('contain', 'Reset'); 
+    
+    })
     });
