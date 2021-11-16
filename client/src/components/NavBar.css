@@ -1,18 +1,22 @@
-/* ul {
+.top-nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
   
-  li {
+  #top-nav-bar-item {
     float: left;
   }
   
-  li a {
+  #top-nav-bar-item a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  } */
+  }
+
+  #top-nav-bar-item a:active{
+      text-transform: underline;
+  }

@@ -11,7 +11,7 @@ const MapContainer = ({animals})=> {
     return (
         <>
         <div className="map-page">
-        <NavBar className="map-nav-bar"/>
+        <NavBar/>
         <Map animalCoordinates = {animalCoordinates}/>
         </div>
         </>
