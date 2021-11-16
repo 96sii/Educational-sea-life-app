@@ -16,11 +16,12 @@
     font-size: 1.3em;
     border: 2px solid #e5640f;
     border-radius: 2em;
-    box-shadow: 10px 10px black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .quiz-button:hover {
     cursor: pointer;
+    color: #e5640f;
 }
 
 .quiz-button:active {
