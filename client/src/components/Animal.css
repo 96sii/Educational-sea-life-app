@@ -1,0 +1,8 @@
+.animal-item{
+    border: 3px solid #e5640f;
+    display: block;
+    border-radius: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: #f1f1f1;
+}

@@ -16,12 +16,15 @@ const App = () => {
 	const [questions, setQuestions] = useState(questions);
 	const [loaded, setLoaded] = useState(false);	
 		
+	const [images, setImages] = useState(images);
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+	const [answers, setAnswers] = useState([])
 
-	const handleAnswerOptionClick = (isCorrect) => {
+	const handleAnswerOptionClick = (isCorrect, answerText) => {
+		setAnswers(oldArray => [...oldArray, answerText])
 		if (isCorrect) {
 			setScore(score + 1);
 		}
@@ -38,6 +41,7 @@ const App = () => {
 		setScore(0);
 		setCurrentQuestion(0);
 		setShowScore(false);
+		setAnswers([]);
 	}
 
 	useEffect(() => {
@@ -47,10 +51,6 @@ const App = () => {
 		.then(questions => setQuestions(questions))
 		.then (() => setLoaded(true))
 	}, []);
-
-
-	console.log(questions);
-
 
 	return (
     <>
@@ -66,9 +66,13 @@ const App = () => {
 						currentQuestion={currentQuestion}
 						handleAnswerOptionClick={handleAnswerOptionClick}
 						showScore={showScore}
+						answers={answers}
 						handleQuizReset={handleQuizReset}
 					/>}/>
-					<Route path="/animals" element = {<AnimalAppContainer animals = {animals}/>}/>
+					<Route path="/animals" element = {<AnimalAppContainer 
+						items = {images}
+						animals = {animals}
+					/>}/>
 					<Route path="/map" element = {<MapContainer animals = {animals}/>}/>
 					<Route element={ErrorPage}/>
 				</Routes>
