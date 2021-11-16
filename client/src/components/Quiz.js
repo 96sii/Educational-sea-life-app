@@ -13,6 +13,8 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
+					<br></br>
+					<button id='reset-button' onClick={() => handleQuizReset()}>Try again?</button>
 					{questions.map((question) => {
 						return (
 							<>
@@ -39,8 +41,6 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 								)
 						})}
 					
-
-                    <button id='reset-button' onClick={() => handleQuizReset()}>Reset</button>
 				</div>
 			) : (
 				<>
