@@ -12,7 +12,9 @@ db.animals.insertMany([
         lifespan: "15-20 years",
         fun_facts: "The male of the species looks after the eggs.",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024576/sea-animals-project-image-gallery/Peng1_n1vpmf.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024576/sea-animals-project-image-gallery/Peng2_pprqtk.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024572/sea-animals-project-image-gallery/Peng3_swmmtt.jpg' }
         ]
     },
     {
@@ -25,7 +27,9 @@ db.animals.insertMany([
         lifespan: "35 - 90 years",
         fun_facts: "Despite living in the water, whales breathe air.",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024580/sea-animals-project-image-gallery/Whale1_dxn9yt.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024580/sea-animals-project-image-gallery/Whale2_r9vryr.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024583/sea-animals-project-image-gallery/Whale3_il0fln.jpg' }
         ]
     },
     {
@@ -38,7 +42,9 @@ db.animals.insertMany([
         lifespan: "25 -100 years",
         fun_facts: "Turtles have favourite colours - they prefer yellow, orange and red food.",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024577/sea-animals-project-image-gallery/Turtle1_vqjmhx.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024578/sea-animals-project-image-gallery/Turtle2_pi9ho5.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024578/sea-animals-project-image-gallery/Turtle3_n3uw2i.jpg' }
         ]
     },
     {
@@ -51,7 +57,9 @@ db.animals.insertMany([
         lifespan: "40 years",
         fun_facts: "Orcas and polar bears are their only natural predators",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024583/sea-animals-project-image-gallery/Walrus1_bsq9lf.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024578/sea-animals-project-image-gallery/Walrus2_dlnz0p.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024582/sea-animals-project-image-gallery/Walrus3_seldbc.jpg' },
         ]
     },
     {
@@ -64,7 +72,9 @@ db.animals.insertMany([
         lifespan: "20 - 30 years",
         fun_facts: "Sharks have fantastic vision",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024578/sea-animals-project-image-gallery/Shark1_firdwc.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024577/sea-animals-project-image-gallery/Shark2_ha46mz.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024576/sea-animals-project-image-gallery/Shark3_uut00y.jpg' }
         ]
     },
     {
@@ -77,7 +87,9 @@ db.animals.insertMany([
         lifespan: "40 - 60 years",
         fun_facts: "Dolphins have 2 stomachs",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024568/sea-animals-project-image-gallery/Dolphin1_eedg5w.webp' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024569/sea-animals-project-image-gallery/Dolphin2_kwtw3f.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024568/sea-animals-project-image-gallery/Dolphin3_z9rnuh.jpg' }
         ]
     },
     {
@@ -90,7 +102,9 @@ db.animals.insertMany([
         lifespan: "6 - 10 years",
         fun_facts: "Clownfish have a symbiotic relationship with anemone.They depend on each other for survival. ",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024575/sea-animals-project-image-gallery/ClownFish1_xww0ea.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024569/sea-animals-project-image-gallery/ClownFish2_vsiywl.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024584/sea-animals-project-image-gallery/ClownFish3_nd7x1m.jpg' }
         ]
     },
     {
@@ -103,7 +117,9 @@ db.animals.insertMany([
         lifespan: "25 - 35 years",
         fun_facts: "Seals can swim up to 22mph",
         images: [
-            { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024575/sea-animals-project-image-gallery/Seal1_wqjore.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024576/sea-animals-project-image-gallery/Seal2_moljhy.jpg' },
+            { original: 'https://res.cloudinary.com/dkwmfvtkq/image/upload/v1637024577/sea-animals-project-image-gallery/Seal3_ru4kbs.jpg' }
         ]
     }
 ]);
