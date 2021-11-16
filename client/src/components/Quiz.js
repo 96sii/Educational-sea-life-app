@@ -51,7 +51,7 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption, index) => (
                             <li key={index}>
-							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect, answerOption.answerText)}>{answerOption.answerText}</button>
+							<button id={'button' + (index + 1)} onClick={() => handleAnswerOptionClick(answerOption.isCorrect, answerOption.answerText)}>{answerOption.answerText}</button>
                             </li>
 						))}
                     </div>
