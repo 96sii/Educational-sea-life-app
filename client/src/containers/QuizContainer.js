@@ -1,12 +1,14 @@
 import Quiz from "../components/Quiz";
 import NavBar from '../components/NavBar';
+import '../components/QuizContainer.css'
 
 const QuizContainer = ({loaded, score, questions, currentQuestion, handleAnswerOptionClick, answers, showScore, handleQuizReset}) => {
 
     return (
-        <>
+        <div className='quiz-page'>
             <NavBar/>
-            <h1>QUIZ</h1>
+            <div className='quiz-container'>
+            <h1 id='quiz-title'>QUIZ</h1>
             <Quiz
                 loaded={loaded}
                 score={score}
@@ -17,7 +19,8 @@ const QuizContainer = ({loaded, score, questions, currentQuestion, handleAnswerO
                 answers={answers}
                 handleQuizReset={handleQuizReset}
             />
-        </>
+            </div>
+        </div>
     )
 }
 

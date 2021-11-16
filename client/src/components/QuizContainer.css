@@ -1,0 +1,17 @@
+.quiz-page {
+    background: url(../assets/images/bg-water-bubbles.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 1.125em;
+}
+
+.quiz-container{
+    text-align: center;
+    color: #FFF;
+}
+
+#quiz-title {
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
