@@ -5,6 +5,7 @@ const AnimalList = ({animals})=>{
 
     return(
         <div className="animal-wrapper">
+            {/* <h1>Sea Animals</h1> */}
             {animals.map((animal, index) => {
                 return(
                     <>

@@ -1,29 +1,44 @@
-.jump-to-menu{
+.container-menu-jump-to {
     position: sticky;
     border: 3px solid #e5640f;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    -ms-flex-preferred-size: 17%;
+    flex-basis: 17%;
+    align-self: flex-start;
     vertical-align: top;
-    width: 15%;
     background-color: #f1f1f1;
     color: #231f20;
     margin-bottom: 4px;
-    padding: 8px 4px 8px 4px;
+    padding: 1.5em 0 1.5em 1.5em;
     top: 24px;
     border-radius: 2em;
 }
 
-.list-item, .quiz-link{
+.menu-jump-to {
+    padding-top: 1em;
+}
+
+.list-item, .quiz-link {
     cursor: pointer;
-    padding: 0.5em;
+    padding: 0.5em 0;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-.list-item:hover, .quiz-link:hover{
-   font-size: 110%;
+.quiz-link a {
+    color: #231f20;
 }
 
-.list-item a.active, .quiz-link a.active{
-    border: 3px solid #e5640f;
-    border-radius: 0.5em; 
-    padding: 0.5em;
+.list-item a:hover, .list-item a:focus, .quiz-link a:hover, .quiz-link a:focus {
+    color: #e5640f;
+}
+
+.list-item a.active, .quiz-link a.active {
+    border-left: 5px solid #e5640f; 
+    padding-left: 0.5em;
+}
+
+.container-menu-jump-to h3 {
+    font-weight: 300;
 }
