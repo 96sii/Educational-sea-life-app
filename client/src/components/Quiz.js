@@ -18,15 +18,15 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 									{question.questionText}
 								</div>
 								<div>
-									{question.answerOptions.map((answer) => {
-										if(answer.isCorrect === true){
+									{question.answerOptions.map((answer, index) => {
+										if(answer.isCorrect === true && answers.includes(answer.answerText)){
 										return (
-											<div className='correct-answer'>
+											<div key={index} className='correct-answer'>
 												{answer.answerText} ✅
 											</div>
 										)} else if (answer.isCorrect === false && answers.includes(answer.answerText)) {
 											return (
-												<div className='incorrect-answer'>
+												<div key={index} className='incorrect-answer'>
 													You answered: {answer.answerText} ❌
 												</div>
 											)
@@ -38,7 +38,7 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 						})}
 					
 
-                    <button onClick={() => handleQuizReset()}>Reset</button>
+                    <button id='reset-button' onClick={() => handleQuizReset()}>Reset</button>
 				</div>
 			) : (
 				<>

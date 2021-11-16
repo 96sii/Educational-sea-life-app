@@ -19,14 +19,14 @@ const NavBar = () => {
                     };
                 }}>Home</NavLink>
             </li>
-                <Link to='/animals'>
+                
             <li className={splitLocation[1] === "animals" ? "active" : ""}>
                 <NavLink to="/animals" style={({ isActive }) => {
                     return {
                         color: isActive ? "red" : ""
                     };
                 }}>Sea Animals</NavLink>
-            </li></Link>
+            </li>
             <li className={splitLocation[1] === "quiz" ? "active" : ""}>
                 <NavLink to="/quiz" style={({ isActive }) => {
                     return {
