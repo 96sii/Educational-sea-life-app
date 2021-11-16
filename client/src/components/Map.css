@@ -1,9 +1,22 @@
 .leaflet-container {
     height: 100vh;
 	width: 100vw;
+    background-color: white;
+    display: block;
+    margin: auto;
+    border-radius: 2em;
+    border: 3px solid #e5640f;
 }
 
 #map {
     height: 100vh;
 	width: 100vw;
+}
+
+.map-page{
+background: url(../assets/images/bg-water-bubbles.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 1.125em
 }

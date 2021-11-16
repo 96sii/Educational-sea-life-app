@@ -36,10 +36,8 @@ const Map = ()=>{
 
   
   return (
-    <MapContainer center={position} zoom={"2"} style={{ height: '100vh', width: '100vw' }}
-    
-    scrollWheelZoom=
-    {false}>
+    <MapContainer center={position} zoom={"2.5"} style={{ height: '80vh', width: '80vw'}}
+     minZoom={"2"} maxZoom={"5"} scrollWheelZoom={false} maxBoundsViscosity={"1.0"} maxBounds={[[-90, -180],[90, 180]]}>
   <TileLayer
     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" noWrap={true} 
@@ -55,7 +53,7 @@ const Map = ()=>{
     return(
     <Marker key = {index} position={position} icon={whaleIcon}>
     <Popup>
-      Whales can be found in all of the major Oceans
+      Whales can be found in all of the major oceans
     </Popup>
     </Marker>
     )})}
@@ -74,7 +72,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={walrusIcon}>
             <Popup>
-              Walrus live in Pacific Ocean, Atlantic and Arctic Ocean
+              Walrus live in Pacific, Atlantic and Arctic Oceans
             </Popup>
           </Marker>
         )
@@ -84,7 +82,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={dolphinIcon}>
             <Popup>
-              Dolphins can be found in Temperate and Tropical waters
+              Dolphins can be found in temperate and tropical waters
             </Popup>
           </Marker>
         )
@@ -94,7 +92,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={fishIcon}>
             <Popup>
-              Clown Fish can be found in Temperate and Tropical waters
+              Clown Fish can be found in temperate and tropical waters
             </Popup>
           </Marker>
         )
