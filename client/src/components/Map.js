@@ -55,7 +55,7 @@ const Map = ()=>{
     return(
     <Marker key = {index} position={position} icon={whaleIcon}>
     <Popup>
-      Whales can be found in all of the major Oceans
+      Whales can be found in all of the major oceans
     </Popup>
     </Marker>
     )})}
@@ -74,7 +74,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={walrusIcon}>
             <Popup>
-              Walrus live in Pacific Ocean, Atlantic and Arctic Ocean
+              Walrus live in Pacific, Atlantic and Arctic Oceans
             </Popup>
           </Marker>
         )
@@ -84,7 +84,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={dolphinIcon}>
             <Popup>
-              Dolphins can be found in Temperate and Tropical waters
+              Dolphins can be found in temperate and tropical waters
             </Popup>
           </Marker>
         )
@@ -94,7 +94,7 @@ const Map = ()=>{
         return (
           <Marker key={index} position={position} icon={fishIcon}>
             <Popup>
-              Clown Fish can be found in Temperate and Tropical waters
+              Clown Fish can be found in temperate and tropical waters
             </Popup>
           </Marker>
         )
