@@ -1,5 +1,6 @@
 import Map from '../components/Map';
 import NavBar from '../components/NavBar';
+import '../components/Map.css'
 
 const MapContainer = ({animals})=> {
 
@@ -10,8 +11,9 @@ const MapContainer = ({animals})=> {
     return (
         <>
         <NavBar/>
-        <p>MAP</p>
+        <div className="map-page">
         <Map animalCoordinates = {animalCoordinates}/>
+        </div>
         </>
     )
 }

@@ -36,10 +36,8 @@ const Map = ()=>{
 
   
   return (
-    <MapContainer center={position} zoom={"2"} style={{ height: '100vh', width: '100vw' }}
-    
-    scrollWheelZoom=
-    {false}>
+    <MapContainer center={position} zoom={"2.5"} style={{ height: '80vh', width: '80vw'}}
+     minZoom={"2"} maxZoom={"5"} scrollWheelZoom={false} maxBoundsViscosity={"1.0"} maxBounds={[[-90, -180],[90, 180]]}>
   <TileLayer
     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" noWrap={true} 
