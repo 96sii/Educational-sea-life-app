@@ -15,6 +15,9 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    background: #DDD;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
   }
 
   #top-nav-bar-item a:hover {
