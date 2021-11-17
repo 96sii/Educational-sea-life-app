@@ -10,24 +10,25 @@ import animalsServices from './services/AnimalsServices';
 import MapContainer from './containers/MapContainer';
 
 const App = () => {
-
+	
 	const [animals, setAnimals] = useState([]);
 	const [questions, setQuestions] = useState(questions);
 	const [loaded, setLoaded] = useState(false);	
-		
-	const [images, setImages] = useState(images);
-
+	
+	const [images] = useState(images);
+	
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 	const [answers, setAnswers] = useState([])
-
+	
+	
 	const handleAnswerOptionClick = (isCorrect, answerText) => {
 		setAnswers(oldArray => [...oldArray, answerText])
 		if (isCorrect) {
 			setScore(score + 1);
 		}
-
+		
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
@@ -42,7 +43,7 @@ const App = () => {
 		setShowScore(false);
 		setAnswers([]);
 	}
-
+	
 	useEffect(() => {
 		animalsServices.getAnimals()
 		.then(animals => setAnimals(animals))
