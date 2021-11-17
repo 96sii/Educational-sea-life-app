@@ -5,7 +5,6 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 	if(!loaded){
 		return <p>loading...</p>
 	}
-	console.log(answers)
 
     return (
         <>
@@ -17,8 +16,8 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 					<button id='reset-button' onClick={() => handleQuizReset()}>Try again?</button>
 					{questions.map((question, index) => {
 						return (
-							<>
-								<div key={index} className='question-text'>
+							<div key={index}>
+								<div className='question-text'>
 									{question.questionText}
 								</div>
 								<div>
@@ -37,7 +36,7 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 										}
 									})}
 								</div>
-							</>
+							</div>
 								)
 						})}
 					
