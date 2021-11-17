@@ -2,7 +2,7 @@
 The BBC are looking to improve their online offering of educational content on marine life by developing some interactive browser applications that display information in a fun and interesting way. 
 
 ## MVP
-Using react, mongoDB and express. Performing unit and intergration testing where appropriate using React testing and Cypress. 
+Using react, mongoDB and express. Performing unit and integration testing where appropriate using React testing and Cypress. 
 
 A user should be able to:
 
