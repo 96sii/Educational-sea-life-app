@@ -10,6 +10,14 @@ import animalsServices from './services/AnimalsServices';
 import MapContainer from './containers/MapContainer';
 
 const App = () => {
+
+	useEffect(() => {
+		animalsServices.getAnimals()
+		.then(animals => setAnimals(animals))
+		animalsServices.getQuestions()
+		.then(questions => setQuestions(questions))
+		.then (() => setLoaded(true))
+	}, []);
 	
 	const [animals, setAnimals] = useState([]);
 	const [questions, setQuestions] = useState(questions);
@@ -44,13 +52,7 @@ const App = () => {
 		setAnswers([]);
 	}
 	
-	useEffect(() => {
-		animalsServices.getAnimals()
-		.then(animals => setAnimals(animals))
-		animalsServices.getQuestions()
-		.then(questions => setQuestions(questions))
-		.then (() => setLoaded(true))
-	}, []);
+
 
 	return (
     <>
