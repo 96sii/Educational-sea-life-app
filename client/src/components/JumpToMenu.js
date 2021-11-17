@@ -1,6 +1,5 @@
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
-import QuizContainer from '../containers/QuizContainer';
 import './JumpToMenu.css';
 
 
