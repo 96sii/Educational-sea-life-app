@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import AnimalAppContainer from "./containers/AnimalAppContainer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
 import Home from './components/Home';
 import QuizContainer from './containers/QuizContainer';
 import ErrorPage from './components/ErrorPage';

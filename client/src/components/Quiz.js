@@ -15,10 +15,10 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 					You scored {score} out of {questions.length}
 					<br></br>
 					<button id='reset-button' onClick={() => handleQuizReset()}>Try again?</button>
-					{questions.map((question) => {
+					{questions.map((question, index) => {
 						return (
 							<>
-								<div className='question-text'>
+								<div key={index} className='question-text'>
 									{question.questionText}
 								</div>
 								<div>

@@ -2,10 +2,10 @@ import './Animal.css'
 import MyGallery from "./MyGallery";
 import { Link } from 'react-scroll';
 
-const Animal = ({animals, name, location, diet, species, endangered_level, size, lifespan, fun_facts, images}) => {
+const Animal = ({name, location, diet, species, endangered_level, size, lifespan, fun_facts, images}) => {
 
     return (
-      <>
+      <div>
         <div className="animal-container-outer">
           <h2 id= {name}>{name}</h2>
 
@@ -54,7 +54,7 @@ const Animal = ({animals, name, location, diet, species, endangered_level, size,
           </div> 
         </div>
         <p className="back-to-top"><Link to="Penguin" spy={true} smooth={true} offset={-77}>^ Back to top</Link></p>
-      </>
+      </div>
     )
   }
   

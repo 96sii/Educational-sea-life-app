@@ -7,9 +7,8 @@ const AnimalList = ({animals})=>{
             {/* <h1>Sea Animals</h1> */}
             {animals.map((animal, index) => {
                 return(
-                    <>
+                    <div key={index}>
                         <Animal
-                        key = {index}
                         name = {animal.name}
                         location = {animal.location}
                         diet = {animal.diet}
@@ -21,7 +20,7 @@ const AnimalList = ({animals})=>{
                         images = {animal.images}
                         />
                         
-                    </>
+                    </div>
                 )
             })}
         </div>
