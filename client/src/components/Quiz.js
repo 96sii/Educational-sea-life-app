@@ -8,27 +8,31 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
 
     return (
         <>
-        <div className='app'>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
 					<br></br>
 					<button id='reset-button' onClick={() => handleQuizReset()}>Try again?</button>
+
 					{questions.map((question, index) => {
 						return (
 							<div key={index}>
 								<div className='question-text'>
 									{question.questionText}
 								</div>
+
 								<div>
 									{question.answerOptions.map((answer, index) => {
 										if(answer.isCorrect === true && answers.includes(answer.answerText)){
 										return (
+
 											<div key={index} className='correct-answer'>
 												{answer.answerText} ✅
 											</div>
+
 										)} else if (answer.isCorrect === false && answers.includes(answer.answerText)) {
 											return (
+
 												<div key={index} className='incorrect-answer'>
 													You answered: {answer.answerText} ❌
 												</div>
@@ -56,8 +60,7 @@ const Quiz = ({loaded, score, questions, currentQuestion, handleAnswerOptionClic
                     </div>
 				</>
 			)}
-		</div>
-        </>
+		</>
     );
 }
 export default Quiz;

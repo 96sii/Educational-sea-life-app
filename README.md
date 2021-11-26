@@ -1,3 +1,8 @@
+![Screenshot](client/src/assets/images/Sealife-pictures/Homepage.png)
+![Screenshot](client/src/assets/images/Sealife-pictures/Animals.png)
+![Screenshot](client/src/assets/images/Sealife-pictures/Quiz.png)
+![Screenshot](client/src/assets/images/Sealife-pictures/Map.png)
+
 # Educational App - Sea Animals
 The BBC are looking to improve their online offering of educational content on marine life by developing some interactive browser applications that display information in a fun and interesting way. 
 
